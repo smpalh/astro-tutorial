@@ -1,6 +1,7 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
 import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
 const pageTitle = "私のAstroサイト";
 ---
 
@@ -14,9 +15,8 @@ const pageTitle = "私のAstroサイト";
 		<ViewTransitions />
 	</head>
 	<body>
+		<Navigation />
+
 		<h1>{pageTitle}</h1>
-		<a href="/">ホーム</a>
-		<a href="/about/">概要</a>
-		<a href="/blog/">ブログ</a>
 	</body>
 </html>
