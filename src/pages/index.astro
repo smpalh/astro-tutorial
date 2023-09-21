@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 const pageTitle = "私のAstroサイト";
 ---
 
@@ -9,6 +10,7 @@ const pageTitle = "私のAstroサイト";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<h1>{pageTitle}</h1>

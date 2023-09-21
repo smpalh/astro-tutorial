@@ -1,4 +1,7 @@
 ---
+import '../styles/global.css'
+import { ViewTransitions } from 'astro:transitions';
+
 const pageTitle = "私について";
 
 const identity = {
@@ -42,6 +45,7 @@ const textCase = "uppercase"
         text-transform: var(--textCase);
       }
     </style>
+    <ViewTransitions />
   </head>
   <body>
     <a href="/">ホーム</a>
