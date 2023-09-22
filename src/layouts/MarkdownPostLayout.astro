@@ -1,0 +1,12 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+
+const { frontmatter } = Astro.props;
+---
+<head>
+    <meta charset="UTF-8">
+    <ViewTransitions />
+</head>
+<h1>{frontmatter.title}</h1>
+<p>著者: {frontmatter.author}</p>
+<slot />
