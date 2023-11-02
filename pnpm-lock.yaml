@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/prefetch':
     specifier: ^0.4.1
     version: 0.4.1
+  '@astrojs/rss':
+    specifier: ^3.0.0
+    version: 3.0.0
   astro:
     specifier: ^3.4.3
     version: 3.4.3
@@ -94,6 +97,13 @@ packages:
     engines: {node: '>=18.14.1'}
     dependencies:
       prismjs: 1.29.0
+    dev: false
+
+  /@astrojs/rss@3.0.0:
+    resolution: {integrity: sha512-PMX8iqByk9gtOrusikten/oF5uHjOCZigL6RuXFBUu+xtdKQxXzfIohJ99V2haA4FJjVDyibDTGzXR81POBMxQ==}
+    dependencies:
+      fast-xml-parser: 4.3.2
+      kleur: 4.1.5
     dev: false
 
   /@astrojs/telemetry@3.0.4:
@@ -1611,6 +1621,13 @@ packages:
       glob-parent: 5.1.2
       merge2: 1.4.1
       micromatch: 4.0.5
+    dev: false
+
+  /fast-xml-parser@4.3.2:
+    resolution: {integrity: sha512-rmrXUXwbJedoXkStenj1kkljNF7ugn5ZjR9FJcwmCfcCbtOMDghPajbc+Tck6vE6F5XsDmx+Pr2le9fw8+pXBg==}
+    hasBin: true
+    dependencies:
+      strnum: 1.0.5
     dev: false
 
   /fastq@1.15.0:
@@ -3560,6 +3577,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /strnum@1.0.5:
+    resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
+    dev: false
 
   /style-to-object@0.4.4:
     resolution: {integrity: sha512-HYNoHZa2GorYNyqiCaBgsxvcJIn7OHq6inEga+E6Ke3m5JkoqpQbnFssk4jwe+K7AhGa2fcha4wSOf1Kn01dMg==}
